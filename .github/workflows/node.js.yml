@@ -20,6 +20,7 @@ jobs:
         run: |
           npm install
           npm run build
+      - uses: actions/upload-artifact@main
   test:
     runs-on: ubuntu-latest
     strategy:
